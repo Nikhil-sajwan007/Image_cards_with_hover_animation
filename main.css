@@ -1,39 +1,45 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
 
     /* global colors */
 
-    --prime : rgb(0, 77, 108);
-    --white : #fff;
+    --prime: rgb(0, 77, 108);
+    --white: #fff;
+    --prime-font :  font-family: "Montserrat", sans-serif;
 
 
 }
 
-body{
+body {
 
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
 }
 
-.main-container{
+.main-container {
 
     border: 1px solid red;
-    width: 60%;
+    width: 70%;
     max-width: 900px;
     display: flex;
     gap: 15px;
+    padding: 10px;
 }
 
-.image-1{
+.image-1 {
 
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 24rem;
     background: url(./images/The\ Commercial\ Group-103.jpg);
     flex-grow: 1;
@@ -43,13 +49,13 @@ body{
     border-radius: 12px;
     position: relative;
     cursor: pointer;
+    overflow: hidden;
 }
 
 
 
-.image-1::after{
-    content: "";
-    background-color: var(--white);
+
+.content {
     height: 100px;
     width: 100%;
     z-index: 10;
@@ -58,23 +64,70 @@ body{
     right: 0;
     left: 0;
     margin-bottom: -20rem;
+    transition: 1500ms ease-in-out;
+    border-radius: 12px;
+    z-index: 100;
+    background-color: var(--white);
+    padding: 10px;
 }
 
-.image-1:hover::after{
+.image-1:hover .content {
+
+    opacity: 1;
+    margin-bottom: 0;
+}
+
+.image-2:hover::after {
 
     margin-bottom: 0;
-    
+
 }
 
-.image-2{
+.image-2 {
 
-    border: 1px solid green;
     height: 24rem;
     background: url(./images/The\ Commercial\ Group-103.jpg);
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
 }
 
-.image-3{
+.image-2::after{
+    content: "";
+    background-color: rgba(10, 10, 10, 0.369);
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1200ms ease-in-out;
+    border-radius: 12px;
+}
+.image-2:hover::after{
+
+    opacity: 1;
+}
+
+.content-2{
+    opacity: 0;
+}
+
+.image-2:hover .content-2{
+    opacity: 1;
+}
+
+
+
+.image-3 {
 
     border: 1px solid green;
     height: 24rem;
