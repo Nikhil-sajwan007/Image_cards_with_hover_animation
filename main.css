@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    /* global colors */
+
+    --prime : rgb(0, 77, 108);
+    --white : #fff;
+
+
+}
+
+body{
+
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+
+    border: 1px solid red;
+    width: 60%;
+    max-width: 900px;
+    display: flex;
+    gap: 15px;
+}
+
+.image-1{
+
+    border: 1px solid green;
+    height: 24rem;
+    background: url(./images/The\ Commercial\ Group-103.jpg);
+    flex-grow: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.image-1::after{
+    content: "";
+    background-color: var(--white);
+    height: 100px;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: -20rem;
+}
+
+.image-1:hover::after{
+
+    margin-bottom: 0;
+    
+}
+
+.image-2{
+
+    border: 1px solid green;
+    height: 24rem;
+    background: url(./images/The\ Commercial\ Group-103.jpg);
+    flex-grow: 1;
+}
+
+.image-3{
+
+    border: 1px solid green;
+    height: 24rem;
+    background: url(./images/The\ Commercial\ Group-103.jpg);
+    flex-grow: 1;
+}
