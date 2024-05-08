@@ -68,6 +68,7 @@ body {
 
 .content {
     /* height: 100px; */
+    line-height: 1.25;
     width: 90%;
     z-index: 10;
     position: absolute;
@@ -80,7 +81,9 @@ body {
     padding: 15px 20px;
     text-align: center;
     opacity: 0;
+    
 }
+
 
 /* .image-1:hover{
 
@@ -93,6 +96,7 @@ body {
     opacity: 1;
     margin-bottom: 20px;
     z-index: 1000;
+    
 }
 
 
@@ -239,6 +243,7 @@ body {
     bottom: -80px;
     z-index: 100;
     transition: 600ms all ease-in-out;
+    
 }
 
 .content-3 .btn{
