@@ -10,7 +10,7 @@
 
     /* global colors */
 
-    --prime: rgb(0, 77, 108);
+    --prime: rgb(0, 49, 68);
     --white: #fff;
     --prime-font :  font-family: "Montserrat", sans-serif;
 
@@ -25,58 +25,76 @@ body {
     align-items: center;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
+    background-color: var(--prime);
 }
 
 .main-container {
 
     border: 1px solid red;
-    width: 70%;
-    max-width: 900px;
+    width: 80%;
+    max-width: 1200px;
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
     padding: 10px;
+}
+
+.image{
+    height: 24rem;
+    border-radius: 12px;
+    width: 28%;
 }
 
 .image-1 {
 
     /* border: 1px solid green; */
-    height: 24rem;
+    /* height: 24rem; */
     background: url(./images/The\ Commercial\ Group-103.jpg);
-    flex-grow: 1;
+    /* flex-grow: 1; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 12px;
     position: relative;
     cursor: pointer;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 
 
 .content {
-    height: 100px;
-    width: 100%;
+    /* height: 100px; */
+    width: 90%;
     z-index: 10;
     position: absolute;
     bottom: 0;
-    right: 0;
-    left: 0;
     margin-bottom: -20rem;
-    transition: 1500ms ease-in-out;
+    transition: 800ms ease-in-out;
     border-radius: 12px;
     z-index: 100;
     background-color: var(--white);
-    padding: 10px;
+    padding: 15px 20px;
+    text-align: center;
 }
+
+
 
 .image-1:hover .content {
 
     opacity: 1;
-    margin-bottom: 0;
+    margin-bottom: -20px;
+    z-index: 1000;
 }
 
+
+
+/* image 1 css ends here  */
+
+
+
+/* 
 .image-2:hover::after {
 
     margin-bottom: 0;
@@ -88,7 +106,7 @@ body {
     height: 24rem;
     background: url(./images/The\ Commercial\ Group-103.jpg);
     /* flex-grow: 1; */
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 12px;
@@ -138,4 +156,115 @@ body {
     height: 24rem;
     background: url(./images/The\ Commercial\ Group-103.jpg);
     flex-grow: 1;
+} */ 
+
+.image-2{
+
+    /* flex-grow: 1; */
+    background: url(./images/The\ Commercial\ Group-103.jpg);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
 }
+
+
+
+.content-2{
+
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -45px;
+    transition: 600ms all ease-in-out;
+    color: var(--white);
+    z-index: 100;
+    width: 100%;
+
+   
+}
+
+.image-2::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    transition: 800ms all ease-in-out;
+}
+
+.image-2:hover::after{
+
+    opacity: 1;
+}
+
+.image-2:hover .content-2{
+
+    margin-bottom: 20px;
+    
+}
+
+/* 2nd css ends here */
+
+/* 3rd card css start here  */
+
+.image-3{
+
+    background: url(./images/The\ Commercial\ Group-103.jpg);
+    /* flex-grow: 1; */
+    position: relative;
+    overflow: hidden;
+}
+
+.content-3{
+
+    color: var(--white);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -80px;
+    z-index: 100;
+    transition: 600ms all ease-in-out;
+}
+
+.content-3 .btn{
+
+    padding: 15px 20px;
+    /* width: 30%; */
+    border: none;
+    border-radius: 35px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.image-3::after{
+    content: "";
+    background-image: linear-gradient(180deg,  rgba(2, 2, 2, 0.5), rgb(12, 12, 12,0.9));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: 600ms all ease-in-out;
+    cursor: pointer;
+}
+
+.image-3:hover::after{
+    opacity: 1;
+}
+
+.image-3:hover .content-3{
+
+    bottom: 15px;
+}
+
+
+
