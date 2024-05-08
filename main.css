@@ -77,14 +77,19 @@ body {
     background-color: var(--white);
     padding: 15px 20px;
     text-align: center;
+    opacity: 0;
 }
 
+/* .image-1:hover{
+
+    overflow: visible;
+} */
 
 
 .image-1:hover .content {
 
     opacity: 1;
-    margin-bottom: -20px;
+    margin-bottom: 20px;
     z-index: 1000;
 }
 
