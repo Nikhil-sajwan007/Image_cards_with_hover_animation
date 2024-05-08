@@ -109,7 +109,7 @@ body {
     right: 0;
     left: 0;
     opacity: 0;
-    transition: 1200ms ease-in-out;
+    transition: 900ms ease-in-out;
     border-radius: 12px;
 }
 .image-2:hover::after{
@@ -119,10 +119,13 @@ body {
 
 .content-2{
     opacity: 0;
+    
 }
+
 
 .image-2:hover .content-2{
     opacity: 1;
+    
 }
 
 
