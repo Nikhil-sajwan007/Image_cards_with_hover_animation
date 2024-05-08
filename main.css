@@ -95,6 +95,7 @@ body {
     position: relative;
     cursor: pointer;
     overflow: hidden;
+    
 }
 
 .image-2::after{
@@ -119,7 +120,7 @@ body {
 
 .content-2{
     opacity: 0;
-    
+       
 }
 
 
