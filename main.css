@@ -74,6 +74,7 @@ body {
     position: absolute;
     bottom: 0;
     margin-bottom: -20rem;
+    /* animation-name: outside; */
     transition: 700ms ease-in-out;
     border-radius: 12px;
     z-index: 100;
@@ -83,6 +84,21 @@ body {
     opacity: 0;
     
 }
+
+/* @keyframes outside{
+    0%{
+        transform: translateY(-1px);
+
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(-50px);
+    }
+} */
 
 
 /* .image-1:hover{
